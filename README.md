@@ -4,7 +4,7 @@
 
 ## Preview
 
-![image](.img/neovim.png)
+![image](.img/preview.png)
 
 ## Overview
 
