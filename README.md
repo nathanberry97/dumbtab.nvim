@@ -14,18 +14,25 @@ The main reason for creating this plugin was due to wanting a simple tabline
 in my neovim config without needing to install a nerd font and 10 other things;
 I know I'm probably the only dev who doesn't like using nerd fonts, shoot me. 
 
-Plus the previous [tabline](https://github.com/mkitt/tabline.vim) plugin I have
-been using has been archived since 2021.
+### Installation
 
-### Plugin setup
-
-```lua
-'nathanberry97/dumbtab.nvim'  -- Lazy.nvim
-```
+#### Lazy
 
 ```lua
-use 'nathanberry97/dumbtab.nvim'  -- Packer.nvim
+{
+    'nathanberry97/dumbtab.nvim'
+}
 ```
+
+#### Packer
+
+```lua
+use {
+    'nathanberry97/dumbtab.nvim'
+}
+```
+
+### Setup
 
 Once installed you will need to add the following to your config to initialise
 the plugin:
@@ -67,11 +74,11 @@ set:
 -- Setup dumbtab configuration
 require('dumbtab').setup({
     currentTabColour = '13',
-    otherTabColour = '8'
+    otherTabColour = '8',
 })
 ```
 
-> **Note** you are able to use hex values too
+> **Note** you can use hex values too
 
 If you want to see other colours you could set the tabline too please use the
 following script:
