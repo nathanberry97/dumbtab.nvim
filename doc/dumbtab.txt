@@ -1,0 +1,71 @@
+===============================================================================
+INTRODUCTION                                                     *dumbtab.nvim*
+
+A neovim tabline so simple it's dumb.
+
+The main reason for creating this plugin was due to wanting a simple tabline
+in my neovim config without needing to install a nerd font and 10 other things;
+I know I'm probably the only dev who doesn't like using nerd fonts, shoot me. 
+
+===============================================================================
+USAGE                                                            *dumbtab.nvim*
+
+To use this plugin, simply install it with your favorite plugin manager and
+then add the following to your init.vim:
+
+    require('dumbtab').setup({})
+
+Note you will need to initialize the plugin after you configure your
+colorscheme else the colors will not be set correctly.
+
+===============================================================================
+KEYBINDINGS                                                      *dumbtab.nvim*
+
+In terms of using the functionality of the plugin I have defined one custom
+keymapping to create new tabs:
+
+vim.keymap.set('n', '<leader>t', ':tabedit .<CR>')
+
+This results in you being able to press your leader key followed by t to
+create new tabs in neovim.
+
+To switch between your tabs I use the default keymappings provided which are:
+
+- gt go to next tab
+- gT go to previous tab
+
+To close the tab just use :q as you would normally.
+
+===============================================================================
+COLOURS                                                          *dumbtab.nvim*
+
+To configure the colors of the tabline you can pass in a table to the setup,
+with the following example:
+
+    require('dumbtab').setup({
+        currentTabColour = '13',
+        otherTabColour = '8',
+    })
+
+If you would like to see the available colors you can run the following:
+
+for i in {0..255}; do
+    printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+done
+
+Also note you are able to pass through any hex colour code as a string.
+
+===============================================================================
+PLUGIN OPTIONS                                                   *dumbtab.nvim*
+
+Packer:
+
+    use 'nathanberry97/dumbtab.nvim'
+
+Lazy:
+
+    {
+        'nathanberry97/dumbtab.nvim',
+    }
+
+===============================================================================
