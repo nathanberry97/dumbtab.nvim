@@ -6,6 +6,10 @@
 
 ![image](.img/preview.png)
 
+> Features included in Dumbtab.nvim:
+> - Formatting of the tabline
+> - Astrick to show modified buffers
+
 ## Overview
 
 > This plugin was inspired from [tabline.vim](https://github.com/mkitt/tabline.vim)
