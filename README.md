@@ -34,7 +34,7 @@ use {
 
 ### Setup
 
-> [`h dumbtab.nvim`](./doc/dumbtab.txt)
+> [`:h dumbtab.nvim`](./doc/dumbtab.txt)
 
 Once installed you will need to add the following to your config to initialise
 the plugin:
