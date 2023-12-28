@@ -1,5 +1,5 @@
 ===============================================================================
-TABLE OF CONTENTS                                       *dumbtab.nvim_contents*
+TABLE OF CONTENTS                                                *dumbtab.nvim*
 
 1. Introduction............................................*dumbtab.nvim_intro*
 2. Usage...................................................*dumbtab.nvim_usage*
@@ -8,7 +8,7 @@ TABLE OF CONTENTS                                       *dumbtab.nvim_contents*
 5. Plugin Options.................................*dumbtab.nvim_plugin_options*
 
 ===============================================================================
-INTRODUCTION                                                     *dumbtab.nvim*
+INTRODUCTION                                               *dumbtab.nvim_intro*
 
 A neovim tabline so simple it's dumb.
 
