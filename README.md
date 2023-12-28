@@ -8,7 +8,7 @@
 
 > Features included in Dumbtab.nvim:
 > - Formatting of the tabline
-> - Astrick to show modified buffers
+> - Asterisk to show modified buffers
 
 ## Overview
 
