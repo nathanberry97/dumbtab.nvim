@@ -4,8 +4,7 @@ TABLE OF CONTENTS                                                *dumbtab.nvim*
 1. Introduction............................................*dumbtab.nvim_intro*
 2. Usage...................................................*dumbtab.nvim_usage*
 3. Keybindings.......................................*dumbtab.nvim_keybindings*
-4. Colours................................................*dumbtab.nvim_colors*
-5. Plugin Options.................................*dumbtab.nvim_plugin_options*
+4. Plugin Options.................................*dumbtab.nvim_plugin_options*
 
 ===============================================================================
 INTRODUCTION                                               *dumbtab.nvim_intro*
@@ -44,25 +43,6 @@ To switch between your tabs I use the default keymappings provided which are:
 - gT go to previous tab
 
 To close the tab just use :q as you would normally.
-
-===============================================================================
-COLOURS                                                   *dumbtab.nvim_colors*
-
-To configure the colors of the tabline you can pass in a table to the setup,
-with the following example:
-
-    require('dumbtab').setup({
-        currentTabColour = '13',
-        otherTabColour = '8',
-    })
-
-If you would like to see the available colors you can run the following:
-
-for i in {0..255}; do
-    printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
-done
-
-Also note you are able to pass through any hex colour code as a string.
 
 ===============================================================================
 PLUGIN OPTIONS                                    *dumbtab.nvim_plugin_options*

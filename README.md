@@ -70,29 +70,3 @@ To switch between your tabs I use the default keymappings provided which are:
 
 > To close the tab just use `:q`
 
-### Colours
-
-In terms of customising the colours of the tab line I have provided the following
-options when initialising the plugin, the example are the default values which are
-set:
-
-```lua
--- Setup dumbtab configuration
-require('dumbtab').setup({
-    currentTabColour = '13',
-    otherTabColour = '8',
-})
-```
-
-> **Note** you can use hex values too
-
-If you want to see other colours you could set the tabline too please use the
-following script:
-
-```shell
-#!/bin/bash
-
-for i in {0..255}; do
-    printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
-done
-```

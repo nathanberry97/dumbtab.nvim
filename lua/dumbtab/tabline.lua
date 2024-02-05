@@ -34,18 +34,6 @@ M.tabline = function()
     vim.o.tabline = '%!v:lua.Tabline()'
 end
 
-M.colours = function(config)
-    local otherTab = config.otherTab
-    local currentTab = config.currentTab
-
-    vim.cmd(
-        string.format('hi TabLineFill ctermfg=%s ctermbg=none', otherTab)
-    )
-    vim.cmd(
-        string.format('hi TabLineSel ctermfg=%s ctermbg=none', currentTab)
-    )
-end
-
 M.keymappings = function()
     vim.keymap.set('n', '<leader>t', ':tabedit .<CR>')
 end
