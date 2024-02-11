@@ -1,0 +1,21 @@
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.4.0
+      hooks:
+          - id: end-of-file-fixer
+          - id: trailing-whitespace
+
+    - repo: https://github.com/Koihik/LuaFormatter
+      rev: 29afe1046ad015de96ffdb6d361a21882356e801
+      hooks:
+          - id: luaformatter
+
+    - repo: https://github.com/tbroadley/spellchecker-cli
+      rev: e4879b5
+      hooks:
+          - id: spellchecker-cli
+            args: ["-l", "en-GB", "-d", ".spelling", "-f", "README.md"]
+            name: spellcheck
+            types: [markdown]
+            stages:
+                - "pre-commit"

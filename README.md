@@ -16,7 +16,7 @@
 
 The main reason for creating this plugin was due to wanting a simple tabline
 in my neovim config without needing to install a nerd font and 10 other things;
-I know I'm probably the only dev who doesn't like using nerd fonts, shoot me. 
+I know I'm probably the only dev who doesn't like using nerd fonts, shoot me.
 
 ### Installation
 
@@ -45,11 +45,11 @@ the plugin:
 
 ```lua
 -- Setup dumbtab configuration
-require('dumbtab').setup({})
+require('dumbtab').setup()
 ```
 
 > **Note** if you initialise the plugin before you set your theme the colours
-> for the tabline will be overwritten 
+> for the tabline will be overwritten
 
 ### Key mappings
 
@@ -70,3 +70,21 @@ To switch between your tabs I use the default keymappings provided which are:
 
 > To close the tab just use `:q`
 
+### Pre-commit
+
+This repository uses [pre-commit](https://pre-commit.com/) to lint the code
+before it is committed to the repository. This is to ensure that the code
+is formatted correctly.
+
+To install pre-commit you can use the following command:
+
+```bash
+pip install pre-commit
+```
+
+Once installed you can run the following command to install the Pre-commit
+hooks:
+
+```bash
+pre-commit install
+```

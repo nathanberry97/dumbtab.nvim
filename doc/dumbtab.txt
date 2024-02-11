@@ -13,7 +13,7 @@ A neovim tabline so simple it's dumb.
 
 The main reason for creating this plugin was due to wanting a simple tabline
 in my neovim config without needing to install a nerd font and 10 other things;
-I know I'm probably the only dev who doesn't like using nerd fonts, shoot me. 
+I know I'm probably the only dev who doesn't like using nerd fonts, shoot me.
 
 ===============================================================================
 USAGE                                                      *dumbtab.nvim_usage*
@@ -21,7 +21,7 @@ USAGE                                                      *dumbtab.nvim_usage*
 To use this plugin, simply install it with your favorite plugin manager and
 then add the following to your init.vim:
 
-    require('dumbtab').setup({})
+    require('dumbtab').setup()
 
 Note you will need to initialize the plugin after you configure your
 colorscheme else the colors will not be set correctly.
