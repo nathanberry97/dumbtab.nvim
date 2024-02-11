@@ -21,7 +21,7 @@ USAGE                                                      *dumbtab.nvim_usage*
 To use this plugin, simply install it with your favorite plugin manager and
 then add the following to your init.vim:
 
-    require('dumbtab').setup({})
+    require('dumbtab').setup()
 
 Note you will need to initialize the plugin after you configure your
 colorscheme else the colors will not be set correctly.

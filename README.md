@@ -45,7 +45,7 @@ the plugin:
 
 ```lua
 -- Setup dumbtab configuration
-require('dumbtab').setup({})
+require('dumbtab').setup()
 ```
 
 > **Note** if you initialise the plugin before you set your theme the colours
