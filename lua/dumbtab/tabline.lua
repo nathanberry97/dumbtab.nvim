@@ -17,15 +17,15 @@ M.tabline = function()
             local tabName = ''
 
             if bufModified == 1 then
-                tabName = '*[' .. vim.fn.fnamemodify(bufname, ':t') .. '] '
+                tabName = '*' .. vim.fn.fnamemodify(bufname, ':t') .. ' '
             else
-                tabName = '[' .. vim.fn.fnamemodify(bufname, ':t') .. '] '
+                tabName = vim.fn.fnamemodify(bufname, ':t') .. ' '
             end
 
-            tabline = tabline .. (bufname ~= '' and tabName or '[No Name] ')
+            tabline = tabline .. (bufname ~= '' and tabName or 'untitled ')
         end
 
-        return tabline
+        return ' ' .. tabline
     end
 
     vim.o.showtabline = 2
