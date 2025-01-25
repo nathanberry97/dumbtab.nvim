@@ -11,11 +11,12 @@ repos:
           - id: luaformatter
 
     - repo: https://github.com/tbroadley/spellchecker-cli
-      rev: e4879b5
+      rev: v6.2.0
       hooks:
           - id: spellchecker-cli
             args: ["-l", "en-GB", "-d", ".spelling", "-f", "README.md"]
             name: spellcheck
+            language_version: 18.19.1
             types: [markdown]
             stages:
                 - "pre-commit"
