@@ -5,11 +5,6 @@ repos:
           - id: end-of-file-fixer
           - id: trailing-whitespace
 
-    - repo: https://github.com/Koihik/LuaFormatter
-      rev: 29afe1046ad015de96ffdb6d361a21882356e801
-      hooks:
-          - id: luaformatter
-
     - repo: https://github.com/tbroadley/spellchecker-cli
       rev: v6.2.0
       hooks:

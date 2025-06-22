@@ -9,7 +9,7 @@ M.setup = function()
 
     -- Tab configuration
     dumbtab.tabline()
-    dumbtab.keymappings()
+    dumbtab.settings()
 end
 
 return M

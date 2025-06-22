@@ -9,9 +9,7 @@ M.tabline = function()
             local buf = vim.fn.tabpagebuflist(tab)[win]
             local bufname = vim.fn.bufname(buf)
 
-            tabline = tabline ..
-                          (tab == vim.fn.tabpagenr() and '%#TabLineSel#' or
-                              '%#TabLine#')
+            tabline = tabline .. (tab == vim.fn.tabpagenr() and '%#TabLineSel#' or '%#TabLine#')
 
             local bufModified = vim.fn.getbufvar(buf, '&mod')
             local tabName = ''
@@ -30,9 +28,13 @@ M.tabline = function()
 
     vim.o.showtabline = 2
     vim.o.tabline = '%!v:lua.Tabline()'
+    vim.keymap.set('n', '<leader>t', ':tabedit .<CR>')
 end
 
-M.keymappings =
-    function() vim.keymap.set('n', '<leader>t', ':tabedit .<CR>') end
+M.settings = function()
+    vim.cmd('hi TabLine guibg=none ctermbg=none')
+    vim.cmd('hi TabLineFill guibg=none ctermbg=none')
+    vim.cmd('hi TabLineSel guibg=none ctermbg=none')
+end
 
 return M
